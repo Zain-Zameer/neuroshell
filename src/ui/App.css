@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+html{
+  scrollbar-color:  white #27272A;
+  scrollbar-width: thin;
+}
+
+html,body,#root{
+  background: transparent !important;
+}
+
+
+
+body {
+  background-color: rgba(30, 30, 30, 0.655); /* Make it semi-transparent */
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
+}
+@keyframes listenSoftFade {
+  0%, 100% {
+    color: white;
+  }
+  50% {
+    color: #9f9f9f; /* light gray */
+  }
+}
+
+.showLeftOFF{
+   background-color: rgba(30, 30, 30, 0.786); 
+}
+.userpromptDesign{
+  background-color: rgba(30, 30, 30, 0.786);
+}
+
+.listen-soft {
+  animation: listenSoftFade 2s ease-in-out infinite;
+}
+
+
+.hover-group:hover .hidden-on-hover {
+  display: block;
+}
+
+.hidden-on-hover {
+  display: none;
+}
+.myNavi{
+  -webkit-app-region:drag;
+}
+.myBtn{
+  -webkit-app-region:no-drag;
+}
